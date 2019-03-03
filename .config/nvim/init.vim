@@ -45,7 +45,7 @@ Plug 'fatih/vim-go'
 Plug 'mdempsky/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
 
 " autocompletion and some other cool features
-Plug 'valloric/youcompleteme'
+" Plug 'valloric/youcompleteme'
 
 " { For C# developement
 Plug 'OmniSharp/omnisharp-vim'
@@ -120,6 +120,17 @@ let g:ale_linters = {
 \ 'cs': ['OmniSharp'] 
 \}
 
+" Contextual code actions (uses fzf, CtrlP or unite.vim when available)
+nnoremap <Leader><Space> :OmniSharpGetCodeActions<CR>
+" Run code actions with text selected in visual mode to extract method
+xnoremap <Leader><Space> :call OmniSharp#GetCodeActions('visual')<CR>
+
+" Rename with dialog
+nnoremap <F2> :OmniSharpRename<CR>
+
+" { Autoformatting
+autocmd InsertLeave *.cs OmniSharpCodeFormat
+" } Autoformatting
 
 let g:go_fmt_command = "goimports"
 
