@@ -25,6 +25,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
 " automatically close brackets
 Plug 'jiangmiao/auto-pairs'
+
+
 call plug#end()
 
 " is needed for some plugins
@@ -64,6 +66,9 @@ set noswapfile
 " default encoding
 set encoding=utf-8
 
+" fixes autocompletion in : menu
+set wildmode=longest,list,full
+set wildmenu
 
 " nnoremap <f5> :%!jq -S .<CR>:w<CR>
 " nnoremap <f6> :set wrap!<CR>

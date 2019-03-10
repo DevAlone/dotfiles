@@ -54,7 +54,7 @@ nnoremap <silent> <A-f> :exe "resize -1"<CR>
 autocmd FileType cs nnoremap <buffer> gd :OmniSharpGotoDefinition<CR>
 " autocmd FileType cs nnoremap <buffer> <Leader>fi :OmniSharpFindImplementations<CR>
 " autocmd FileType cs nnoremap <buffer> <Leader>fs :OmniSharpFindSymbol<CR>
-" autocmd FileType cs nnoremap <buffer> <Leader>fu :OmniSharpFindUsages<CR>
+autocmd FileType cs nnoremap <buffer> fu :OmniSharpFindUsages<CR>
 " Finds members in the current buffer
 " autocmd FileType cs nnoremap <buffer> <Leader>fm :OmniSharpFindMembers<CR>
 

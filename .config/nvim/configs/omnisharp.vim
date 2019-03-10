@@ -29,4 +29,5 @@ let g:ale_linters = {
 
 
 " Autoformatting
-autocmd InsertLeave *.cs OmniSharpCodeFormat
+" autocmd InsertLeave *.cs OmniSharpCodeFormat
+autocmd BufWritePre *.cs OmniSharpCodeFormat
