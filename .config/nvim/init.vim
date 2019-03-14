@@ -1,6 +1,8 @@
 call plug#begin('~/.config/nvim/plugged')
+
 " autocompletion
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
 " print documentation of current method in the bottom
 Plug 'Shougo/echodoc.vim'
 
@@ -15,17 +17,37 @@ Plug 'OrangeT/vim-csharp'
 " } For C# developement
 
 Plug 'scrooloose/nerdtree'
-" Plug 'fatih/vim-go'
-" Plug 'zchee/deoplete-go'
-" Plug 'mdempsky/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
 
-" autocompletion and some other cool features
-" Plug 'valloric/youcompleteme'
+" { For Go developement
+Plug 'fatih/vim-go'
+" autocompletion
+Plug 'zchee/deoplete-go'
+Plug 'mdempsky/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
+" }
 
+" { For C++ developement
+" autocompletion
+Plug 'Shougo/deoplete-clangx'
+" #include completion
+Plug 'Shougo/neoinclude.vim'
+" linter 
+Plug 'vim-syntastic/syntastic'
+" } For C++ developement
+
+" nice tag bar to quickly navigate over the file
 Plug 'majutsushi/tagbar'
 " automatically close brackets
 Plug 'jiangmiao/auto-pairs'
 
+" { snippets
+" Plug 'SirVer/ultisnips'
+" Plug 'honza/vim-snippets'
+" } snippets
+
+
+" quick navigation between files
+" Plug 'wincent/command-t'
+Plug 'ctrlpvim/ctrlp.vim'
 
 call plug#end()
 

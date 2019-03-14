@@ -51,9 +51,11 @@ nnoremap <silent> <A-f> :exe "resize -1"<CR>
 " } deoplete tab key
 
 " { omnisharp
+" go to definition
 autocmd FileType cs nnoremap <buffer> gd :OmniSharpGotoDefinition<CR>
 " autocmd FileType cs nnoremap <buffer> <Leader>fi :OmniSharpFindImplementations<CR>
 " autocmd FileType cs nnoremap <buffer> <Leader>fs :OmniSharpFindSymbol<CR>
+" find usages
 autocmd FileType cs nnoremap <buffer> fu :OmniSharpFindUsages<CR>
 " Finds members in the current buffer
 " autocmd FileType cs nnoremap <buffer> <Leader>fm :OmniSharpFindMembers<CR>
@@ -78,3 +80,9 @@ nnoremap <m-return> :OmniSharpGetCodeActions<CR>
 nnoremap <F2> :OmniSharpRename<CR>
 
 " { omnisharp
+
+" { CtrlP
+" go to file
+map <buffer> gf :CtrlPMixed<CR>
+" }
+
