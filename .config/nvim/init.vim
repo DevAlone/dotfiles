@@ -46,7 +46,6 @@ Plug 'jiangmiao/auto-pairs'
 
 
 " quick navigation between files
-" Plug 'wincent/command-t'
 Plug 'ctrlpvim/ctrlp.vim'
 
 call plug#end()
