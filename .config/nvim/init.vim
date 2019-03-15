@@ -48,6 +48,9 @@ Plug 'jiangmiao/auto-pairs'
 " quick navigation between files
 Plug 'ctrlpvim/ctrlp.vim'
 
+" cute bar below
+" Plug 'vim-airline/vim-airline'
+
 call plug#end()
 
 " is needed for some plugins
