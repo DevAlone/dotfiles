@@ -83,8 +83,8 @@ nnoremap <F2> :OmniSharpRename<CR>
 
 " { CtrlP
 " go to file
-map <buffer> gf :CtrlPMixed<CR>
-" }
+nnoremap gf :CtrlPMixed<CR>
+" } CtrlP
 
 " Navigate up and down
 autocmd FileType go nnoremap <buffer> <M-k> [m
