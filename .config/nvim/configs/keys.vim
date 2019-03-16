@@ -86,3 +86,6 @@ nnoremap <F2> :OmniSharpRename<CR>
 map <buffer> gf :CtrlPMixed<CR>
 " }
 
+" Navigate up and down
+autocmd FileType go nnoremap <buffer> <M-k> [m
+autocmd FileType go nnoremap <buffer> <M-j> ]m

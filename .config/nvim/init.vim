@@ -6,12 +6,15 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " print documentation of current method in the bottom
 Plug 'Shougo/echodoc.vim'
 
+" { linters
+Plug 'w0rp/ale'
+Plug 'neomake/neomake'
+" } linters
+
 " { For C# developement
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'tpope/vim-dispatch'
 Plug 'shougo/vimproc.vim', {'do' : 'make'}
-" linter
-Plug 'w0rp/ale'
 " syntax highlighting and something else
 Plug 'OrangeT/vim-csharp'
 " } For C# developement
