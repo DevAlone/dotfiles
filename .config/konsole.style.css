@@ -1,0 +1,19 @@
+QTabBar,
+QTabBar::tab
+{
+	background-color: black;
+	color: white;
+	border-bottom: 1px solid transparent;
+	border-top: 1px solid #aeaeae;
+	padding: 5px 10px;
+}
+
+QTabBar::tab:hover
+{
+	border-bottom: 1px solid #aeaeae;
+}
+
+QTabBar::tab:selected
+{
+	border-bottom: 1px solid white;
+}
