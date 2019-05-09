@@ -89,11 +89,6 @@ set foldmethod=syntax
 set foldlevel=0
 " set foldclose=all
 set foldnestmax=1
-" save folding between sessions
-augroup GoFolds
-  au BufWrite *.go mkview
-  au BufRead *.go silent loadview
-augroup END
 
 " disable swap and backup files
 set nobackup
