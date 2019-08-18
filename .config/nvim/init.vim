@@ -84,7 +84,11 @@ set nu
 set mouse=a
 
 " automatically hides blocks of code
-set foldcolumn=3
+" set foldcolumn=3
+set foldmethod=syntax
+set foldlevel=0
+" set foldclose=all
+set foldnestmax=1
 
 " disable swap and backup files
 set nobackup
@@ -97,21 +101,6 @@ set encoding=utf-8
 set wildmode=longest,list,full
 set wildmenu
 
-" nnoremap <f5> :%!jq -S .<CR>:w<CR>
-" nnoremap <f6> :set wrap!<CR>
-" nnoremap <F7> :set noet ci pi sts=0 sw=4 ts=4
-" set foldmethod=syntax
-" set foldcolumn=1
-" set foldlevelstart=100
-" set nofoldenable
-" nnoremap <A-]> zO
-" nnoremap <A-[> zc
-
 for f in split(glob('~/.config/nvim/configs/*.vim'), '\n')
     exe 'source' f
 endfor
-
-" source $HOME/.config/nvim/configs/keys.vim
-" source $HOME/.config/nvim/configs/omnisharp.vim
-" source $HOME/.config/nvim/configs/deoplete.vim
-" source $HOME/.config/nvim/configs/echodoc.vim
