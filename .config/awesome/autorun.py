@@ -17,6 +17,8 @@ programs_to_start = [
     "/home/user/bin/libinput_settings.sh",
     "xfce4-power-manager",
     "aa-notify -p -v -f /var/log/audit/audit.log",
+    "numlockx",
+    'xmodmap -e "keycode 77 = """'
 ]
 
 
