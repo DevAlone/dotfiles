@@ -344,11 +344,11 @@ globalkeys = gears.table.join(
 		{description = "run application launcher", group = "launcher"}),
 	awful.key({ modkey }, "z", function () awful.spawn("/home/user/bin/lock_script.sh") end,
 		{description = "lock screen", group = "lock"}),
-	awful.key({ }, "Print", function () awful.spawn("scrot /home/user/screenshots/%Y-%m-%d-%T-screenshot.png") end,
+	awful.key({ }, "Print", function () awful.spawn("/home/user/bin/make_screenshot.sh screen") end,
 		{description = "make a screenshot", group = "screenshot"}),
-	awful.key({ "Control" }, "Print", function () awful.spawn("/home/user/bin/screenshot_with_selection.sh") end,
+	awful.key({ "Control" }, "Print", function () awful.spawn("/home/user/bin/make_screenshot.sh selection") end,
 		{description = "make a screenshot with selection", group = "screenshot"}),
-	awful.key({ "Mod1" }, "Print", function () awful.spawn("scrot -u /home/user/screenshots/%Y-%m-%d-%T-screenshot.png") end,
+	awful.key({ "Mod1" }, "Print", function () awful.spawn("/home/user/bin/make_screenshot.sh window") end,
 		{description = "make a screenshot of current window", group = "screenshot"}),
 	awful.key({ modkey }, "b", function()
 		current_screen = awful.screen.focused()

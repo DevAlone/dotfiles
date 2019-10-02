@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+/home/user/bin/_smarty &> /tmp/smarty.log
