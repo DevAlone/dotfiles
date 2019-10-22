@@ -46,8 +46,8 @@ nnoremap <silent> <A-f> :exe "resize -1"<CR>
 " } window split settings
 
 " { deoplete tab key
-" inoremap <silent><expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
-" inoremap <silent><expr><s-tab> pumvisible() ? "\<c-p>" : "\<s-tab>"
+inoremap <silent><expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+inoremap <silent><expr><s-tab> pumvisible() ? "\<c-p>" : "\<s-tab>"
 " } deoplete tab key
 
 " { omnisharp
