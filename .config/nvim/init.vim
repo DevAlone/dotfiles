@@ -9,6 +9,7 @@ Plug 'Shougo/echodoc.vim'
 " { linters
 Plug 'w0rp/ale'
 Plug 'neomake/neomake'
+" Plug 'vim-syntastic/syntastic'
 " } linters
 "
 
@@ -39,7 +40,6 @@ Plug 'Shougo/deoplete-clangx'
 " #include completion
 Plug 'Shougo/neoinclude.vim'
 " linter
-Plug 'vim-syntastic/syntastic'
 " } For C++ developement
 
 "{ Python
