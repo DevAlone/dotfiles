@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [[ $EUID -ne 0 ]]
+then
+        echo 'script must be run as root'
+	exit 1
+fi
+
+if $(ls /tmp/win7-stop-lock) 
+then 
+	echo 'locked by /tmp/win7-stop-lock'
+else
+	touch /tmp/win7-stop-lock
+	killall ssvncviewer || killall -9 ssvncviewer
+	kill `pgrep -t tty8 'X'` || kill -9 `pgrep -t tty8 'X'`
+	su - user -c 'VBoxManage controlvm "win7" savestate'
+	kill -9 `cat PID`
+	rm /tmp/win7-stop-lock
+	echo 'stopped'
+fi
+

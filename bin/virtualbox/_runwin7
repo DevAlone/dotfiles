@@ -1,0 +1,31 @@
+#!/bin/bash
+
+if [[ $EUID -ne 0 ]]
+then
+	echo 'script must be run as root'
+	exit 1
+fi
+
+if $(ls /tmp/win7-stop-lock)
+then
+	echo 'locked by /tmp/win7-stop-lock'
+else
+	echo $$ > PID
+	X :1 vt08 &>> log &
+	sleep 1s
+	su - user -c 'VBoxHeadless --vrde on -s "win7" &>> log' &
+	sleep 5s
+	VBoxManage controlvm "win7" setvideomodehint 1366 768 32
+	
+	while :
+	do	
+		echo 'connecting to server...' >> log
+		# su - user -c "export DISPLAY=':1'; echo 'qwerty'|xvncviewer 127.0.0.1:3389 -autopass -fullscreen &>> log"
+		su - user -c "export DISPLAY=':1'; echo 'qwerty'|ssvncviewer -fullscreen -autopass 127.0.0.1:3389 &>> log"
+		# su - user -c "export DISPLAY=':1'; rdesktop -fullscreen 127.0.0.1 &>> log"
+		sleep 5s
+	done
+	# VBoxManage controlvm "win7" setvideomodehint 1368 768 32 &
+fi
+
+
