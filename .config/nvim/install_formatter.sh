@@ -32,7 +32,7 @@ fi
 
 case "$OS" in
 	"Debian GNU/Linux")
-		apt install clang-format python-autopep8
+		apt install clang-format python-autopep8 flake8 pylint
 		npm install -g js-beautify
 		;;
 	*)
