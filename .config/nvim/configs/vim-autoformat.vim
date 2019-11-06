@@ -6,6 +6,8 @@ fun! AutoformatFile()
 		return
 	elseif expand('%') =~ 'Dockerfile'
 		return
+	elseif expand('%') =~ 'docker-compose.yml'
+		return
 
 	endif
 
