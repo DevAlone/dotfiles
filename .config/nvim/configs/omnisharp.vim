@@ -23,11 +23,6 @@ autocmd CursorHold *.cs call OmniSharp#TypeLookupWithoutDocumentation()
 " Update the highlighting whenever leaving insert mode
 autocmd InsertLeave *.cs call OmniSharp#HighlightBuffer()
 
-let g:ale_linters = { 
-\ 'cs': ['OmniSharp'] 
-\}
-
-
 " Autoformatting
 " autocmd InsertLeave *.cs OmniSharpCodeFormat
 autocmd BufWritePre *.cs OmniSharpCodeFormat

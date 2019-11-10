@@ -7,8 +7,8 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/echodoc.vim'
 
 " { linters
-" Plug 'w0rp/ale'
-Plug 'vim-syntastic/syntastic'
+Plug 'dense-analysis/ale'
+" Plug 'vim-syntastic/syntastic'
 " Plug 'neomake/neomake'
 " } linters
 "

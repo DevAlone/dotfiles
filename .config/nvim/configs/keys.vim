@@ -1,3 +1,8 @@
+" {
+nnoremap <buffer> gd ::ALEGoToDefinition<CR>
+" autocmd nnoremap <buffer> gu :ALEFindReferences<CR>
+nnoremap <buffer> gr :ALEFindReferences<CR>
+" }
 
 map <C-n> :NERDTreeToggle<CR>
 " find current file inside a nerdtree
