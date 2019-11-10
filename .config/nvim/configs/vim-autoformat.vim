@@ -17,4 +17,4 @@ fun! AutoformatFile()
 endfun
 
 
-autocmd BufWrite * call AutoformatFile()
+" autocmd BufWrite * call AutoformatFile()

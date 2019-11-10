@@ -32,7 +32,8 @@ fi
 
 case "$OS" in
 	"Debian GNU/Linux")
-		apt install clang-format python-autopep8 flake8 pylint pyflakes
+		apt-get install -y clang-format python-autopep8 flake8 pylint pyflakes bandit flake8 mypy prospector pycodestyle pydocstyle pyflakes pylama pylint vulture
+		sudo -u user pip3 install --user 'python-language-server[all]' 'pyre-check'
 		npm install -g js-beautify
 		;;
 	*)

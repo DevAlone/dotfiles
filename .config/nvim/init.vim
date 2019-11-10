@@ -14,7 +14,7 @@ Plug 'dense-analysis/ale'
 "
 
 " { Autoformatting
-Plug 'Chiel92/vim-autoformat'
+" Plug 'Chiel92/vim-autoformat'
 Plug 'psf/black' " Python
 " } Autoformatting
 
