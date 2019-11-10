@@ -15,6 +15,7 @@ Plug 'vim-syntastic/syntastic'
 
 " { Autoformatting
 Plug 'Chiel92/vim-autoformat'
+Plug 'psf/black' " Python
 " } Autoformatting
 
 " { For C# developement
