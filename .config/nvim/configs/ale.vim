@@ -25,12 +25,7 @@ let g:ale_linters = {
 			\'pyls',
 			\'flake8',
 			\'pyflakes',
-			\'bandit',
-			\'prospector',
 			\'pycodestyle',
-			\'pylama',
-			\'pyre',
-			\'vulture'
 			\]}
 
 fun! SetPythonEnv()
@@ -41,3 +36,9 @@ fun! SetPythonEnv()
 endfun
 
 call SetPythonEnv()
+
+" highlight clear ALEErrorSign
+" highlight clear ALEWarningSign
+highlight ALEWarning ctermbg=DarkYellow
+highlight ALEError ctermbg=DarkRed
+
