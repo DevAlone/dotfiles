@@ -28,6 +28,9 @@ let g:ale_linters = {
 			\'pycodestyle',
 			\]}
 
+" W503: line break before binary operator
+let g:ale_python_flake8_options = '--ignore=W503,C0111'
+
 let g:ale_python_pycodestyle_options = '--max-line-length 100'
 
 fun! SetPythonEnv()
@@ -45,4 +48,4 @@ highlight ALEWarning ctermbg=DarkYellow
 highlight ALEError ctermbg=DarkRed
 let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
-let g:ale_echo_msg_format = '[%severity%] [%linter%] %...code...% %s'
+let g:ale_echo_msg_format = '[%severity%] [%linter%] (%code%) %s'
