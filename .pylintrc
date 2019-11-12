@@ -1,0 +1,12 @@
+[MASTER]
+disable=
+    C0111, # missing-module-docstring
+	R0903, # [too-few-public-methods] Too few public methods (1/2)
+	E501,  # E501 line too long (87 > 79 characters)
+	W0232, # [no-init] Class has no __init__ method
+	W503,  # line break before binary operator
+
+
+[FORMAT]
+
+max-line-length=100
