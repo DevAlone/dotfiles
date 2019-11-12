@@ -28,10 +28,12 @@ let g:ale_linters = {
 			\'pycodestyle',
 			\]}
 
-" W503: line break before binary operator
-let g:ale_python_flake8_options = '--ignore=W503,C0111'
-
-let g:ale_python_pycodestyle_options = '--max-line-length 100'
+" C0111  # missing-module-docstring
+" R0903  # [too-few-public-methods] Too few public methods (1/2)
+" E501   # E501 line too long (87 > 79 characters)
+" W0232  # [no-init] Class has no __init__ method
+" W503   # line break before binary operator                                                          
+let g:ale_python_flake8_options = '--ignore=C0111,R0903,E501,W0232,W503'
 
 fun! SetPythonEnv()
 	let extension = expand('%:e')
