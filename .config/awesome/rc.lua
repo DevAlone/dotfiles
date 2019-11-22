@@ -248,6 +248,10 @@ globalkeys = gears.table.join(
               {description = "view previous", group = "tag"}),
     awful.key({ modkey,           }, "Right",  awful.tag.viewnext,
               {description = "view next", group = "tag"}),
+    awful.key({ modkey,           }, "j",   awful.tag.viewprev,
+              {description = "view previous", group = "tag"}),
+    awful.key({ modkey,           }, "l",  awful.tag.viewnext,
+              {description = "view next", group = "tag"}),
     awful.key({ modkey,           }, "Escape", awful.tag.history.restore,
               {description = "go back", group = "tag"}),
 
@@ -340,7 +344,7 @@ globalkeys = gears.table.join(
     awful.key({ modkey }, "0", function() menubar.show() end,
               {description = "show the menubar", group = "launcher"}),
 -- mine
-	awful.key({ "Mod1" }, "space", function () awful.spawn("/home/user/bin/smarty") end,
+	awful.key({ "Mod1" }, "space", function () awful.spawn("dmenu_run") end,
 		{description = "run application launcher", group = "launcher"}),
 	awful.key({ modkey }, "z", function () awful.spawn("/home/user/bin/lock_script.sh") end,
 		{description = "lock screen", group = "lock"}),
@@ -514,6 +518,7 @@ awful.rules.rules = {
         role = {
           "AlarmWindow",  -- Thunderbird's calendar.
           "pop-up",       -- e.g. Google Chrome's (detached) Developer Tools.
+	  "PictureInPicture",
         }
       }, properties = { floating = true }},
 
