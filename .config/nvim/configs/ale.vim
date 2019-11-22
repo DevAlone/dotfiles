@@ -21,12 +21,15 @@
 "			\]}
 
 let g:ale_linters = {
-			\'python': [
-			\'pyls',
-			\'flake8',
-			\'pyflakes',
-			\'pycodestyle',
-			\]}
+	\'python': [
+		\'pyls',
+		\'flake8',
+		\'pyflakes',
+		\'pycodestyle',
+	\],
+	\'golang': [],
+	\'go': [],
+\}
 
 " C0111  # missing-module-docstring
 " R0903  # [too-few-public-methods] Too few public methods (1/2)

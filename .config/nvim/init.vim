@@ -8,13 +8,10 @@ Plug 'Shougo/echodoc.vim'
 
 " { linters
 Plug 'dense-analysis/ale'
-" Plug 'vim-syntastic/syntastic'
-" Plug 'neomake/neomake'
 " } linters
 "
 
 " { Autoformatting
-" Plug 'Chiel92/vim-autoformat'
 Plug 'psf/black' " Python
 " } Autoformatting
 
@@ -29,7 +26,7 @@ Plug 'OrangeT/vim-csharp'
 Plug 'scrooloose/nerdtree'
 
 " { For Go developement
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " autocompletion
 Plug 'zchee/deoplete-go'
 Plug 'mdempsky/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
