@@ -1,4 +1,4 @@
-autocmd BufWritePre *.go GoImports
+" autocmd BufWritePre *.go GoImports
 
 " save folding between sessions
 augroup GoFolds

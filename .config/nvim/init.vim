@@ -7,9 +7,13 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/echodoc.vim'
 
 " { linters
-Plug 'w0rp/ale'
-Plug 'neomake/neomake'
+Plug 'dense-analysis/ale'
 " } linters
+"
+
+" { Autoformatting
+Plug 'psf/black' " Python
+" } Autoformatting
 
 " { For C# developement
 Plug 'OmniSharp/omnisharp-vim'
@@ -22,7 +26,7 @@ Plug 'OrangeT/vim-csharp'
 Plug 'scrooloose/nerdtree'
 
 " { For Go developement
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " autocompletion
 Plug 'zchee/deoplete-go'
 Plug 'mdempsky/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
@@ -33,9 +37,12 @@ Plug 'mdempsky/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nv
 Plug 'Shougo/deoplete-clangx'
 " #include completion
 Plug 'Shougo/neoinclude.vim'
-" linter 
-Plug 'vim-syntastic/syntastic'
+" linter
 " } For C++ developement
+
+"{ Python
+Plug 'deoplete-plugins/deoplete-jedi'
+"} Python
 
 " nice tag bar to quickly navigate over the file
 Plug 'majutsushi/tagbar'
@@ -102,5 +109,5 @@ set wildmode=longest,list,full
 set wildmenu
 
 for f in split(glob('~/.config/nvim/configs/*.vim'), '\n')
-    exe 'source' f
+	exe 'source' f
 endfor
