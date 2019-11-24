@@ -43,6 +43,11 @@ Plug 'Shougo/neoinclude.vim'
 "{ Python
 Plug 'deoplete-plugins/deoplete-jedi'
 "} Python
+"
+
+"{ Lua
+Plug 'andrejlevkovitch/vim-lua-format'
+"}
 
 " nice tag bar to quickly navigate over the file
 Plug 'majutsushi/tagbar'
