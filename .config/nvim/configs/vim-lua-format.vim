@@ -6,5 +6,6 @@ function! FormatCurrentLuaBuffer()
 endfunction
 
 " autocmd BufWrite *.lua call FormatCurrentLuaBuffer()
+" TODO: fix https://github.com/drmingdrmer/vim-indent-lua/issues/1
 " indents code and returns to current line
-autocmd BufWrite *.lua :normal gg=G``
+" autocmd BufWrite *.lua :normal gg=G``
