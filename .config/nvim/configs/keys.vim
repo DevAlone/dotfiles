@@ -13,16 +13,18 @@ map <C-n> :NERDTreeToggle<CR>
 
 " { window split settings
 
-tnoremap <Esc> <C-\><C-n>
-tnoremap <S-h> <C-\><C-N><C-w>h
-tnoremap <S-j> <C-\><C-N><C-w>j
-tnoremap <S-k> <C-\><C-N><C-w>k
-tnoremap <S-l> <C-\><C-N><C-w>l
+map <S-k> <Nop> " disable annoying documentation popping up
 
-nnoremap <S-h> <C-w>h
-nnoremap <S-j> <C-w>j
-nnoremap <S-k> <C-w>k
-nnoremap <S-l> <C-w>l
+" tnoremap <Esc> <C-\><C-n>
+" tnoremap <S-h> <C-\><C-N><C-w>h
+" tnoremap <S-j> <C-\><C-N><C-w>j
+" tnoremap <S-k> <C-\><C-N><C-w>k
+" tnoremap <S-l> <C-\><C-N><C-w>l
+
+nnoremap <A-h> <C-w>h
+nnoremap <A-j> <C-w>j
+nnoremap <A-k> <C-w>k
+nnoremap <A-l> <C-w>l
 
 " nmap <silent> <A-Up> :wincmd k<CR>
 " nmap <silent> <A-Down> :wincmd j<CR>
