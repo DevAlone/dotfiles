@@ -10,8 +10,8 @@ local menubar = require("menubar")
 -- {{{ Menu
 -- Create a launcher widget and a main menu
 
-local mylauncher = awful.widget
-                       .launcher({image = beautiful.awesome_icon, menu = globals.mymainmenu})
+local mylauncher_config = {image = beautiful.awesome_icon, menu = globals.mymainmenu}
+local mylauncher = awful.widget.launcher(mylauncher_config)
 
 -- Menubar configuration
 -- Set the terminal for applications that require it
@@ -24,7 +24,8 @@ menubar.utils.terminal = globals.terminal_emulator
 local mykeyboardlayout = awful.widget.keyboardlayout()
 
 -- Create a textclock widget
-local mytextclock = wibox.widget.textclock()
+local mytextclock = wibox.widget
+                        .textclock(globals.clock_format, globals.update_clock_each_n_seconds)
 
 -- Create a wibox for each screen and add it
 local taglist_buttons = gears.table.join(
@@ -105,7 +106,6 @@ awful.screen.connect_for_each_screen(
         set_wallpaper(s)
 
         -- Each screen has its own tag table.
-        -- awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
         awful.tag(globals.tags, s, awful.layout.layouts[1])
 
         -- Create a promptbox for each screen
@@ -143,7 +143,7 @@ awful.screen.connect_for_each_screen(
                        )
 
         -- Create the wibox
-        s.mywibox = awful.wibar({position = "bottom", screen = s})
+        s.mywibox = awful.wibar({position = globals.panel_position, screen = s})
 
         -- Add widgets to the wibox
         s.mywibox:setup{

@@ -18,7 +18,7 @@ programs_to_start = [
     "xfce4-power-manager",
     "aa-notify -p -v -f /var/log/audit/audit.log",
     "numlockx",
-    'xmodmap -e "keycode 77 = """'
+#    'xmodmap -e "keycode 77 = """'
 ]
 
 

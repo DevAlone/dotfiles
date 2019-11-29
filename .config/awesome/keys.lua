@@ -2,7 +2,6 @@ local globals = require("globals")
 
 local awful = require("awful")
 local gears = require("gears")
-local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup").widget
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
@@ -49,11 +48,6 @@ local globalkeys = gears.table.join(
             awful.client.focus.byidx(-1)
         end, {description = "focus previous by index", group = "client"}
                        ), awful.key(
-                           {globals.modkey}, "1", function()
-            globals.mymainmenu:show()
-        end, {description = "show main menu", group = "awesome"}
-                       ), -- Layout manipulation
-    awful.key(
                            {globals.modkey, "Shift"}, "j", function()
             awful.client.swap.byidx(1)
         end, {description = "swap with next client by index", group = "client"}
@@ -145,11 +139,6 @@ local globalkeys = gears.table.join(
             }
         end, {description = "lua execute prompt", group = "awesome"}
                        ), -- Menubar
-    awful.key(
-                           {globals.modkey}, "0", function()
-            menubar.show()
-        end, {description = "show the menubar", group = "launcher"}
-                       ), -- mine
     awful.key(
                            {"Mod1"}, "space", function()
             awful.spawn("dmenu_run")
