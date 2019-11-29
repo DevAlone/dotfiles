@@ -43,6 +43,16 @@ Plug 'Shougo/neoinclude.vim'
 "{ Python
 Plug 'deoplete-plugins/deoplete-jedi'
 "} Python
+"
+
+"{ Lua
+" autocompletion dependency
+Plug 'xolox/vim-misc'
+" autocompletion
+Plug 'xolox/vim-lua-ftplugin'
+" indentation
+" Plug 'drmingdrmer/vim-indent-lua'
+" }
 
 " nice tag bar to quickly navigate over the file
 Plug 'majutsushi/tagbar'

@@ -30,13 +30,21 @@ else
 	VER=$(uname -r)
 fi
 
+# TODO: install vim-plug
 case "$OS" in
 	"Debian GNU/Linux")
-		apt-get install -y clang-format python-autopep8 flake8 pylint pyflakes bandit flake8 mypy prospector pycodestyle pydocstyle pyflakes pylama pylint vulture
-		sudo -u user pip3 install --user 'python-language-server[all]' 'pyre-check'
+		apt-get install -y build-essential clang-format python-autopep8 flake8 pylint pyflakes bandit mypy prospector pycodestyle pydocstyle pyflakes pylama pylint vulture lua-check
+		sudo -u user pip3 install --user 'python-language-server[all]' 'pyre-check' || exit 1
+		sudo -u user pip3 install --user 'neovim' || exit 1
+		npm install -g js-beautify || exit 1
+		;;
+	"Fedora")
+		dnf install -y @development-tools
+		dnf install -y nodejs python3 python-pip python3-devel ctags-etags clang python-autopep8 python3-flake8 pylint pyflakes bandit python3-mypy python3-pycodestyle python3-pydocstyle pyflakes pylint python3-vulture || exit 1
+		sudo -u user pip3 install --user 'python-language-server[all]' 'pyre-check' 'prospector[with_pyroma]' 'neovim' 'pylama' || exit 1
 		npm install -g js-beautify
 		;;
 	*)
-		echo "Your distribution is not supported yet"
+		echo "Your distribution '$OS' is not supported yet"
 		;;
 esac

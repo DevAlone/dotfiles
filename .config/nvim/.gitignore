@@ -3,3 +3,4 @@ autoload
 ftplugin
 plugged
 .plug.vim
+*.swp
