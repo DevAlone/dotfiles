@@ -51,7 +51,7 @@ Plug 'xolox/vim-misc'
 " autocompletion
 Plug 'xolox/vim-lua-ftplugin'
 " indentation
-Plug 'drmingdrmer/vim-indent-lua'
+" Plug 'drmingdrmer/vim-indent-lua'
 " }
 
 " nice tag bar to quickly navigate over the file

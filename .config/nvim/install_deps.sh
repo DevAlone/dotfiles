@@ -33,7 +33,7 @@ fi
 # TODO: install vim-plug
 case "$OS" in
 	"Debian GNU/Linux")
-		apt-get install -y build-essential clang-format python-autopep8 flake8 pylint pyflakes bandit mypy prospector pycodestyle pydocstyle pyflakes pylama pylint vulture
+		apt-get install -y build-essential clang-format python-autopep8 flake8 pylint pyflakes bandit mypy prospector pycodestyle pydocstyle pyflakes pylama pylint vulture lua-check
 		sudo -u user pip3 install --user 'python-language-server[all]' 'pyre-check' || exit 1
 		sudo -u user pip3 install --user 'neovim' || exit 1
 		npm install -g js-beautify || exit 1
