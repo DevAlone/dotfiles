@@ -54,7 +54,7 @@ globals.mymainmenu = awful.menu(
 
 globals.tags = {"1", "q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "[", "]"}
 
-globals.clock_format = "%a %b %d.%m.%y %H:%M:%S"
+globals.clock_format = "%a %b %d.%m.%y | %H:%M:%S"
 globals.update_clock_each_n_seconds = 1
 globals.panel_position = "bottom"
 
