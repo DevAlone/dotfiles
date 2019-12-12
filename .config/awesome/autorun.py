@@ -12,7 +12,7 @@ programs_to_start = [
     ['kmix'],
     ['nm-applet'],
     'setxkbmap -option caps:swapescape',
-#     ['compton', '-b'],
+    ['compton', '-b'],
     "xss-lock -- i3lock -n",
     "/home/user/bin/libinput_settings.sh",
     "xfce4-power-manager",
