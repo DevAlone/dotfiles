@@ -110,7 +110,7 @@ awful.rules.rules = {
                 "PictureInPicture",
             },
         },
-        properties = {floating = true},
+        properties = {floating = true, titlebars_enabled = true},
     },
 
     -- Add titlebars to normal clients and dialogs
