@@ -22,6 +22,7 @@ map <S-k> <Nop> " disable annoying documentation popping up
 " tnoremap <S-l> <C-\><C-N><C-w>l
 
 nnoremap <A-h> <C-w>h
+" autocmd VimEnter * nnoremap <A-j> <C-w>j
 nnoremap <A-j> <C-w>j
 nnoremap <A-k> <C-w>k
 nnoremap <A-l> <C-w>l
@@ -94,5 +95,5 @@ nnoremap gf :CtrlPMixed<CR>
 " } CtrlP
 
 " Navigate up and down
-autocmd FileType go nnoremap <buffer> <M-k> [m
-autocmd FileType go nnoremap <buffer> <M-j> ]m
+autocmd FileType go nnoremap <buffer> <C-k> [m
+autocmd FileType go nnoremap <buffer> <C-j> ]m

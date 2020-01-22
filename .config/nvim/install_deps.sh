@@ -40,7 +40,7 @@ case "$OS" in
 		;;
 	"Fedora")
 		dnf install -y @development-tools
-		dnf install -y nodejs python3 python-pip python3-devel ctags-etags clang python-autopep8 python3-flake8 pylint pyflakes bandit python3-mypy python3-pycodestyle python3-pydocstyle pyflakes pylint python3-vulture || exit 1
+		dnf install -y neovim python{2,3}-neovim nodejs python3 python-pip python3-devel ctags-etags clang python-autopep8 python3-flake8 pylint pyflakes bandit python3-mypy python3-pycodestyle python3-pydocstyle pyflakes pylint python3-vulture || exit 1
 		sudo -u user pip3 install --user 'python-language-server[all]' 'pyre-check' 'prospector[with_pyroma]' 'neovim' 'pylama' || exit 1
 		npm install -g js-beautify
 		;;
