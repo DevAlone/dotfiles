@@ -30,18 +30,23 @@ else
 	VER=$(uname -r)
 fi
 
-# TODO: install vim-plug
+# install vim-plug
+if [ ! -d ~/.local/share/nvim/site/autoload/ ]; then
+	curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+		https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim || exit 1
+fi
+
 case "$OS" in
 	"Debian GNU/Linux")
 		apt-get install -y build-essential clang-format python-autopep8 flake8 pylint pyflakes bandit mypy prospector pycodestyle pydocstyle pyflakes pylama pylint vulture lua-check
-		sudo -u user pip3 install --user 'python-language-server[all]' 'pyre-check' || exit 1
-		sudo -u user pip3 install --user 'neovim' || exit 1
+		sudo -u $USER pip3 install --user 'python-language-server[all]' 'pyre-check' || exit 1
+		sudo -u $USER pip3 install --user 'neovim' || exit 1
 		npm install -g js-beautify || exit 1
 		;;
 	"Fedora")
 		dnf install -y @development-tools
-		dnf install -y nodejs python3 python-pip python3-devel ctags-etags clang python-autopep8 python3-flake8 pylint pyflakes bandit python3-mypy python3-pycodestyle python3-pydocstyle pyflakes pylint python3-vulture || exit 1
-		sudo -u user pip3 install --user 'python-language-server[all]' 'pyre-check' 'prospector[with_pyroma]' 'neovim' 'pylama' || exit 1
+		dnf install -y neovim python3-neovim nodejs python3 python-pip python3-devel ctags-etags clang python-autopep8 python3-flake8 pylint pyflakes bandit python3-mypy python3-pycodestyle python3-pydocstyle pyflakes pylint python3-vulture || exit 1
+		sudo -u $USER pip3 install --user 'python-language-server[all]' 'pyre-check' 'prospector[with_pyroma]' 'neovim' 'pylama' || exit 1
 		npm install -g js-beautify
 		;;
 	*)

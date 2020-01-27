@@ -118,6 +118,15 @@ set encoding=utf-8
 set wildmode=longest,list,full
 set wildmenu
 
+" save folding between sessions
+augroup Folds
+	au BufWrite *.* mkview
+	au BufRead *.* silent loadview
+augroup END
+
 for f in split(glob('~/.config/nvim/configs/*.vim'), '\n')
 	exe 'source' f
 endfor
+
+" important to put at the end so it overrides all existing keys from plugins' configs
+exe 'source' '~/.config/nvim/keys.vim'
