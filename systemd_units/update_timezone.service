@@ -1,0 +1,15 @@
+[Unit]
+Description=update timezone according to current IP location
+After=syslog.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/home/user/bin/
+ExecStart=/home/user/bin/update_timezone.sh
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target

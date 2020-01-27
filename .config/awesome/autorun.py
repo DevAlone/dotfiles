@@ -18,12 +18,15 @@ programs_to_start = [
     "xfce4-power-manager",
     "aa-notify -p -v -f /var/log/audit/audit.log",
     "numlockx",
-#    'xmodmap -e "keycode 77 = """'
+#    'xmodmap -e "keycode 77 = """',
+    "/home/user/create_hotspot_and_wait_forever.sh",
 ]
 
 
 def run_if_not_present(args):
     proc_iter = psutil.process_iter(attrs=["pid", "name", "cmdline"])
+    # print([p.info["cmdline"] for p in proc_iter])
+    # print(args[0])
     is_running = any(args[0] in p.info["cmdline"] for p in proc_iter)
     if is_running:
         return
