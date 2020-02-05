@@ -1,6 +1,6 @@
 #!/bin/bash
 
-i3lock -i $USER/wallpapers/bsod.png --ignore-empty-password --show-failed-attempts -c 000000
+i3lock -i /home/$USER/wallpapers/bsod.png --ignore-empty-password --show-failed-attempts -c 000000
 
 exit
 
