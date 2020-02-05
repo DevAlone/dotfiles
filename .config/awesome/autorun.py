@@ -14,13 +14,17 @@ programs_to_start = [
     'setxkbmap -option caps:swapescape',
     ['compton', '-b'],
     "xss-lock -- i3lock -n",
-    "/home/user/bin/libinput_settings.sh",
     "xfce4-power-manager",
-    "aa-notify -p -v -f /var/log/audit/audit.log",
     "numlockx",
 #    'xmodmap -e "keycode 77 = """',
-    "/home/user/create_hotspot_and_wait_forever.sh",
 ]
+
+if os.environ['COMPUTER_TYPE'] != "work_laptop":
+    programs_to_start.extend([
+        "/home/user/create_hotspot_and_wait_forever.sh",
+        "/home/user/bin/libinput_settings.sh",
+        "aa-notify -p -v -f /var/log/audit/audit.log",
+    ])
 
 
 def run_if_not_present(args):
