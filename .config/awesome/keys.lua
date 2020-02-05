@@ -148,19 +148,19 @@ local globalkeys = gears.table.join(
         end, {description = "run application launcher", group = "launcher"}
                        ), awful.key(
                            {globals.modkey}, "z", function()
-            awful.spawn("/home/user/bin/lock_script.sh")
+            awful.spawn(globals.home_dir .. "/bin/lock_script.sh")
         end, {description = "lock screen", group = "lock"}
                        ), awful.key(
                            {}, "Print", function()
-            awful.spawn("/home/user/bin/make_screenshot.sh screen")
+            awful.spawn(globals.home_dir .. "/bin/make_screenshot.sh screen")
         end, {description = "make a screenshot", group = "screenshot"}
                        ), awful.key(
                            {"Control"}, "Print", function()
-            awful.spawn("/home/user/bin/make_screenshot.sh selection")
+            awful.spawn(globals.home_dir .. "/bin/make_screenshot.sh selection")
         end, {description = "make a screenshot with selection", group = "screenshot"}
                        ), awful.key(
                            {"Mod1"}, "Print", function()
-            awful.spawn("/home/user/bin/make_screenshot.sh window")
+            awful.spawn(globals.home_dir .. "/bin/make_screenshot.sh window")
         end, {description = "make a screenshot of current window", group = "screenshot"}
                        ), awful.key(
                            {globals.modkey}, "b", function()

@@ -34,7 +34,7 @@ case "$OS" in
         "Debian GNU/Linux")
                 ;;
         "Fedora")
-                dnf install -y kmix compton xss-lock xfce4-power-manager numlockx network-manager-applet dmenu @development-tools redhat-rpm-config python2-devel python3-devel
+                sudo dnf install -y kmix compton xss-lock xfce4-power-manager numlockx network-manager-applet dmenu @development-tools redhat-rpm-config python2-devel python3-devel i3lock
 		pip3 install psutil
                 ;;
         *)
