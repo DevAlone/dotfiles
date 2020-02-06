@@ -26,7 +26,7 @@ if os.environ['COMPUTER_TYPE'] != "work_laptop":
         "aa-notify -p -v -f /var/log/audit/audit.log",
     ])
 
-if os.environ['COMPUTER_TYPE'] != "work_laptop":
+if os.environ['COMPUTER_TYPE'] == "work_laptop":
     programs_to_start.extend([
         "xrandr --output eDP-1 --mode 1368x768",
     ])
