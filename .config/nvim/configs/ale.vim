@@ -27,8 +27,6 @@ let g:ale_linters = {
 		\'pyflakes',
 		\'pycodestyle',
 	\],
-	\'golang': [],
-	\'go': [],
 \}
 
 " C0111  # missing-module-docstring

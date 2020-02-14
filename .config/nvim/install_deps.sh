@@ -45,7 +45,7 @@ case "$OS" in
 		;;
 	"Fedora")
 		sudo dnf install -y @development-tools
-		sudo dnf install -y golang neovim python3-neovim nodejs python3 python-pip python3-devel ctags-etags clang python3-flake8 pylint pyflakes bandit python3-mypy python3-pycodestyle python3-pydocstyle pyflakes pylint python3-vulture || exit 1
+		sudo dnf install -y neovim python3-neovim nodejs python3 python-pip python3-devel ctags-etags clang python3-flake8 pylint pyflakes bandit python3-mypy python3-pycodestyle python3-pydocstyle pyflakes pylint python3-vulture || exit 1
 		sudo -u $USER pip3 install --user 'python-language-server[all]' 'pyre-check' 'prospector[with_pyroma]' 'neovim' 'pylama' 'autopep8' || exit 1
 		sudo npm install -g js-beautify
 		sudo -u $USER go get -u github.com/stamblerre/gocode

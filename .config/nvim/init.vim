@@ -8,6 +8,7 @@ Plug 'Shougo/echodoc.vim'
 
 " { linters
 Plug 'dense-analysis/ale'
+Plug 'vim-syntastic/syntastic'
 " } linters
 "
 
