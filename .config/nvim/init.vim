@@ -118,6 +118,9 @@ set encoding=utf-8
 set wildmode=longest,list,full
 set wildmenu
 
+" case insensitive search for commands
+set ignorecase
+
 " save folding between sessions
 augroup Folds
 	au BufWrite *.* mkview
