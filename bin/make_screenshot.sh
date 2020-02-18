@@ -17,3 +17,4 @@ case $1 in
 esac
 
 xclip -selection clipboard -t image/png -i $filename
+notify-send "screenshot was just made"
