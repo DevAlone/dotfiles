@@ -33,7 +33,8 @@ if os.environ["COMPUTER_TYPE"] != "work_laptop":
 if os.environ["COMPUTER_TYPE"] == "work_laptop":
     programs_to_start.extend(
         [
-            "xrandr --output eDP-1 --mode 1368x768",
+            # "xrandr --output eDP-1 --mode 1368x768",
+            "xrandr --output eDP-1 --mode 1600x900",
             HOME + "/bin/configure_touchpad.sh",
             # remap Menu key to right control
             'xmodmap -e "keycode 135 = Control_R"',
