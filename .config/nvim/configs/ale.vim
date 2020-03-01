@@ -27,7 +27,21 @@ let g:ale_linters = {
 		\'pyflakes',
 		\'pycodestyle',
 	\],
+	\'go': [
+		\'bingo', 
+		\'gobuild', 
+		\'gofmt', 
+		\'golangci-lint', 
+		\'golint', 
+		\'gopls', 
+		\'gosimple', 
+		\'gotype', 
+		\'govet', 
+		\'golangserver', 
+		\'staticcheck',
+	\]
 \}
+" \'gometalinter', 
 
 " C0111  # missing-module-docstring
 " R0903  # [too-few-public-methods] Too few public methods (1/2)
@@ -52,3 +66,7 @@ highlight ALEError ctermbg=DarkRed
 let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
 let g:ale_echo_msg_format = '[%severity%] [%linter%] (%code%) %s'
+
+let g:ale_python_mypy_options = '--ignore-missing-imports --other-option'
+" let g:ale_go_golangci_lint_options = '--enable-all --disable gomnd'
+let g:ale_go_golangci_lint_options = '--enable-all'

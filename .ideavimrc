@@ -1,0 +1,96 @@
+set secure
+
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set smarttab
+" keep N lines below and above cursor when scrolling
+set scrolloff=10
+
+" line length limiter
+set colorcolumn=100
+highlight ColorColumn ctermbg=darkgray
+
+" syntax highlighting
+syntax on
+
+" number of colors
+set t_Co=256
+
+" line nubering
+set nu
+" mouse support
+set mouse=a
+
+" automatically hides blocks of code
+" set foldcolumn=3
+set foldmethod=syntax
+set foldlevel=0
+" set foldclose=all
+set foldnestmax=1
+
+" disable swap and backup files
+set nobackup
+set noswapfile
+
+" default encoding
+set encoding=utf-8
+
+" fixes autocompletion in : menu
+set wildmode=longest,list,full
+set wildmenu
+
+" case insensitive search for commands
+set ignorecase
+
+" save folding between sessions
+augroup Folds
+	au BufWrite *.* mkview
+	au BufRead *.* silent loadview
+augroup END
+
+" { window split settings
+
+map <S-k> <Nop> " disable annoying documentation popping up
+
+" tnoremap <Esc> <C-\><C-n>
+" tnoremap <S-h> <C-\><C-N><C-w>h
+" tnoremap <S-j> <C-\><C-N><C-w>j
+" tnoremap <S-k> <C-\><C-N><C-w>k
+" tnoremap <S-l> <C-\><C-N><C-w>l
+
+nnoremap <A-h> <C-w>h
+" autocmd VimEnter * nnoremap <A-j> <C-w>j
+nnoremap <A-j> <C-w>j
+nnoremap <A-k> <C-w>k
+nnoremap <A-l> <C-w>l
+
+" nmap <silent> <A-Up> :wincmd k<CR>
+" nmap <silent> <A-Down> :wincmd j<CR>
+" nmap <silent> <A-Left> :wincmd h<CR>
+" nmap <silent> <A-Right> :wincmd l<CR>
+
+" nmap <silent> <A-k> :wincmd k<CR>
+" nmap <silent> <A-j> :wincmd j<CR>
+" nmap <silent> <A-h> :wincmd h<CR>
+" nmap <silent> <A-l> :wincmd l<CR>
+
+
+" resize window
+" nnoremap <silent> <A-d> :exe "resize " . string(winheight(0) * 1.5)<CR>
+" nnoremap <silent> <A-f> :exe "resize " . string(winheight(0) * 0.8)<CR>
+
+nnoremap <silent> <S-d> :exe "resize +5"<CR>
+nnoremap <silent> <S-f> :exe "resize -5"<CR>
+nnoremap <silent> <S-g> :exe "vertical resize +5"<CR>
+nnoremap <silent> <S-s> :exe "vertical resize -5"<CR>
+
+
+nnoremap <silent> <A-d> :exe "resize +1"<CR>
+nnoremap <silent> <A-f> :exe "resize -1"<CR>
+
+" } window split settings
+
+" Navigate up and down
+autocmd FileType go nnoremap <buffer> <C-k> [m
+autocmd FileType go nnoremap <buffer> <C-j> ]m

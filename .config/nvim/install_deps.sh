@@ -49,6 +49,8 @@ case "$OS" in
 		sudo -u $USER pip3 install --user 'python-language-server[all]' 'pyre-check' 'prospector[with_pyroma]' 'neovim' 'pylama' 'autopep8' || exit 1
 		sudo npm install -g js-beautify
 		sudo -u $USER go get -u github.com/stamblerre/gocode
+		sudo -u $USER go get github.com/alecthomas/gometalinter
+		sudo -u $USER env PATH=$PATH:$HOME/go/bin gometalinter --install
 		;;
 	*)
 		echo "Your distribution '$OS' is not supported yet"
