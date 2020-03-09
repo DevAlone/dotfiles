@@ -35,10 +35,8 @@ let g:ale_linters = {
 		\'golint', 
 		\'gopls', 
 		\'gosimple', 
-		\'gotype', 
 		\'govet', 
 		\'golangserver', 
-		\'staticcheck',
 	\]
 \}
 " \'gometalinter', 

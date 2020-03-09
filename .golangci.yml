@@ -2,12 +2,14 @@ linters-settings:
 linters:
   enable:
     - bodyclose
-    - deadcode
+    # a lot of false positives
+    # - deadcode
     - depguard
     - dogsled
     - dupl
     - errcheck
-    - funlen
+    # function is too long
+    # - funlen
     - gochecknoinits
     - goconst
     - gocritic
@@ -15,7 +17,6 @@ linters:
     - gofmt
     - goimports
     - golint
-    - gomnd
     - goprintffuncname
     - gosec
     - gosimple
@@ -36,9 +37,13 @@ linters:
     - unused
     - varcheck
     - whitespace
-    - gochecknoglobals
+    # * is a global variable
+    # - gochecknoglobals
     - gocognit
     - godox
     - maligned
     - prealloc
-    - wsl
+    # expression shouldn't be cuddled
+    # - wsl
+    # magic numbers
+    # - gomnd
