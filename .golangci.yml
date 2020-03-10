@@ -2,7 +2,6 @@ linters-settings:
 linters:
   disable-all: true
   enable:
-    - bodyclose
     - depguard
     - dogsled
     - dupl
@@ -23,7 +22,6 @@ linters:
     - lll
     - misspell
     - nakedret
-    - rowserrcheck
     - scopelint
     - staticcheck
     - structcheck
@@ -39,7 +37,8 @@ linters:
     - maligned
     - prealloc
     
-# disabled ones   
+# disabled ones
+    # - bodyclose
     # a lot of false positives
     # - deadcode
     # function is too long
@@ -50,3 +49,5 @@ linters:
     # - wsl
     # magic numbers
     # - gomnd
+    #
+    # - rowserrcheck
