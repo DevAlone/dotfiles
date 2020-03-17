@@ -238,4 +238,4 @@ if [[ "$USE_DPMS" == true ]]; then
 fi
 
 
-i3lock "${PARAMS[@]}"
+i3lock --nofork "${PARAMS[@]}"

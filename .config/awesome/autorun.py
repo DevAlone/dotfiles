@@ -10,7 +10,7 @@ HOME = os.environ["HOME"]
 
 programs_to_start = [
     #     'setxkbmap -layout "us,ru" -model "pc105" -option "grp:alt_shift_toggle,grp_led:scroll"',
-    "setxkbmap -layout us,ru -model pc105 -option grp:alt_shift_toggle,grp_led:scroll",
+    HOME + "/bin/init_layout.sh",
     ["kmix"],
     ["nm-applet"],
     "setxkbmap -option caps:swapescape",
