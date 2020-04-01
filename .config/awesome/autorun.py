@@ -19,14 +19,13 @@ programs_to_start = [
 #    'xmodmap -e "keycode 77 = """',
 ]
 
-if os.environ['COMPUTER_TYPE'] != "work_laptop":
-    programs_to_start.extend([
+programs_to_start.extend([
         "/home/user/create_hotspot_and_wait_forever.sh",
         "/home/user/bin/libinput_settings.sh",
         "aa-notify -p -v -f /var/log/audit/audit.log",
     ])
 
-if os.environ['COMPUTER_TYPE'] != "work_laptop":
+if 'COMPUTER_TYPE' in os.environ and os.environ['COMPUTER_TYPE'] != "work_laptop":
     programs_to_start.extend([
         "xrandr --output eDP-1 --mode 1368x768",
     ])
