@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-filename=/home/user/screenshots/$(date +%Y-%m-%d-%T)-screenshot.png
+filename=$HOME/screenshots/$(date +%Y-%m-%d-%T)-screenshot.png
 
 sleep 0.3s;
 
@@ -17,3 +17,4 @@ case $1 in
 esac
 
 xclip -selection clipboard -t image/png -i $filename
+notify-send "screenshot was just made"

@@ -8,6 +8,7 @@ Plug 'Shougo/echodoc.vim'
 
 " { linters
 Plug 'dense-analysis/ale'
+Plug 'vim-syntastic/syntastic'
 " } linters
 "
 
@@ -117,6 +118,9 @@ set encoding=utf-8
 " fixes autocompletion in : menu
 set wildmode=longest,list,full
 set wildmenu
+
+" case insensitive search for commands
+set ignorecase
 
 " save folding between sessions
 augroup Folds
