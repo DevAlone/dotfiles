@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
 function cleanup() {
-    "$HOME"/bin/init_layout.sh
-	echo cleaning up...
+	"$HOME"/bin/init_layout.sh
 }
 trap cleanup EXIT
 
@@ -15,10 +14,11 @@ case $((RANDOM%10)) in
 	i3lockmore --image-fill "$IMAGE"
 ;;
 [6-9] ) 
+	IMAGE=/tmp/screen_locked.png
 	# Take a screenshot
-	scrot /tmp/screen_locked.png
+	scrot $IMAGE
 	# Pixellate it
-	mogrify -scale 5% -scale 2000% /tmp/screen_locked.png
+	mogrify -scale 5% -scale 2000% $IMAGE
 	# mogrify -scale 10% -scale 1000% /tmp/screen_locked.png
 	# mogrify -scale 2.5% -scale 4000% /tmp/screen_locked.png
 	IMAGE=/tmp/screen_locked.png
