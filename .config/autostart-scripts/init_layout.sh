@@ -1,0 +1,1 @@
+/home/szakharo/bin/init_layout.sh
