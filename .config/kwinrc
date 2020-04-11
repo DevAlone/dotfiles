@@ -21,6 +21,9 @@ Name_3=e
 Number=3
 Rows=1
 
+[ModifierOnlyShortcuts]
+Meta=
+
 [org.kde.kdecoration2]
 BorderSize=Normal
 BorderSizeAuto=false
@@ -29,6 +32,3 @@ ButtonsOnRight=HIAX
 CloseOnDoubleClickOnMenu=false
 library=org.kde.kwin.aurorae
 theme=__aurorae__svg__air-oxygen
-
-[ModifierOnlyShortcuts]
-Meta=

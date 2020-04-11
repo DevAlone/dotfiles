@@ -9,6 +9,8 @@ HOME = os.environ["HOME"]
 
 
 programs_to_start = [
+    "killall kglobalaccel5",
+    "killall krunner",
     #     'setxkbmap -layout "us,ru" -model "pc105" -option "grp:alt_shift_toggle,grp_led:scroll"',
     "setxkbmap -layout us,ru -model pc105 -option grp:alt_shift_toggle,grp_led:scroll",
     ["kmix"],
@@ -21,7 +23,7 @@ programs_to_start = [
     #    'xmodmap -e "keycode 77 = """',
 ]
 
-if os.environ["COMPUTER_TYPE"] != "work_laptop":
+if os.getenv("COMPUTER_TYPE") != "work_laptop":
     programs_to_start.extend(
         [
             "/home/user/create_hotspot_and_wait_forever.sh",
@@ -30,8 +32,8 @@ if os.environ["COMPUTER_TYPE"] != "work_laptop":
         ]
     )
 
-if os.environ["COMPUTER_TYPE"] == "work_laptop":
-    programs_to_start.extend(
+if os.getenv("COMPUTER_TYPE") == "work_laptop":
+   programs_to_start.extend(
         [
             # "xrandr --output eDP-1 --mode 1368x768",
             "xrandr --output eDP-1 --mode 1600x900",
