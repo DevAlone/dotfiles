@@ -178,7 +178,7 @@ WindowSnapZone=10
 [org.kde.kdecoration2]
 BorderSize=Normal
 ButtonsOnLeft=MS
-ButtonsOnRight=BFLSHIAX
+ButtonsOnRight=BFLHIAX
 CloseOnDoubleClickOnMenu=false
 library=org.kde.kwin.aurorae
 theme=__aurorae__svg__air-oxygen
