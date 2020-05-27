@@ -25,11 +25,9 @@ display=Display,Display\tMeta+P,Switch Display
 
 [khotkeys]
 _k_friendly_name=KDE Daemon
-{2d4f971c-2438-4093-87fe-dabb30902991}=,none,Take Rectangular Region Screenshot
 {63aaae30-9cf1-47b0-96f6-a63925cf2da1}=Ctrl+Print,none,Scrot selection
 {69e7e1ed-7388-4608-927e-1d2f36a35128}=Print,none,Start Screenshot Tool
 {9bc2c44d-3127-4e1f-b58b-e79be84078c7}=Ctrl+Alt+T,none,Launch Konsole
-{bb104d52-f514-471c-aa30-3decbe2a3a71}=,none,Scrot selection
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none,none,Search
 {d5aea8c7-07d2-4abb-b915-c5084ec171e9}=Meta+Print,none,Take Active Window Screenshot
 {f894cb38-5c27-4935-a944-c5f9c4414da4}=Shift+Print,none,Take Full Screen Screenshot
