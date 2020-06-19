@@ -33,26 +33,16 @@ Rows=1
 
 [Desktops]
 Id_1=a64cc52e-95aa-4892-a3af-d246e4dce673
-Id_10=6780fc3e-5ede-4409-9184-e92993a6af57
 Id_2=9506d159-9a07-45b3-b630-253d8d4c8569
 Id_3=67b5f69a-725c-466d-8717-805d06115b8e
 Id_4=651daa4a-db7c-417b-b6e6-8d542a28653f
 Id_5=ce3c2984-9f5c-471a-a672-8fada4fbfef9
-Id_6=9bbaec7c-340e-4f95-bedb-3fddd1ef08b3
-Id_7=e69cda7e-560c-4100-822f-396e3a431d2a
-Id_8=ab4a7de0-475b-4299-8862-e5592c34f13c
-Id_9=22aac578-51e0-4f11-b080-febc1b967772
 Name_1=q
-Name_10=p
 Name_2=w
 Name_3=e
 Name_4=r
 Name_5=t
-Name_6=y
-Name_7=u
-Name_8=i
-Name_9=o
-Number=10
+Number=5
 Rows=1
 
 [Effect-CoverSwitch]
@@ -107,7 +97,7 @@ CommandWindowWheel=Scroll
 [Plugins]
 desktopchangeosdEnabled=false
 highlightwindowEnabled=true
-windowgeometryEnabled=true
+windowgeometryEnabled=false
 
 [Script-desktopchangeosd]
 PopupHideDelay=1000
@@ -159,7 +149,7 @@ ElectricBorderTiling=true
 ElectricBorders=0
 FocusPolicy=ClickToFocus
 FocusStealingPreventionLevel=1
-GeometryTip=true
+GeometryTip=false
 HideUtilityWindowsForInactive=true
 InactiveTabsSkipTaskbar=false
 MaximizeButtonLeftClickCommand=Maximize

@@ -240,6 +240,7 @@ activate task manager entry 7=Meta+7,Meta+7,Activate Task Manager Entry 7
 activate task manager entry 8=Meta+8,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
 activate widget 119=Alt+F1,none,Activate Application Launcher Widget
+activate widget 136=,none,Activate Application Launcher Widget
 activate widget 3=,none,Activate Application Launcher Widget
 activate widget 41=,none,Activate Application Launcher Widget
 activate widget 66=,none,Activate Application Launcher Widget
