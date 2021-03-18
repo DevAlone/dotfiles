@@ -61,7 +61,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_1_2Triggers0]
-Key=Ctrl+Alt+T
+Key=
 Type=SHORTCUT
 Uuid={9bc2c44d-3127-4e1f-b58b-e79be84078c7}
 
@@ -506,7 +506,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_3_1Triggers0]
-Key=Print
+Key=
 Type=SHORTCUT
 Uuid={69e7e1ed-7388-4608-927e-1d2f36a35128}
 
@@ -535,7 +535,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_3_2Triggers0]
-Key=Shift+Print
+Key=
 Type=SHORTCUT
 Uuid={f894cb38-5c27-4935-a944-c5f9c4414da4}
 
@@ -564,7 +564,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_3_3Triggers0]
-Key=Meta+Print
+Key=
 Type=SHORTCUT
 Uuid={d5aea8c7-07d2-4abb-b915-c5084ec171e9}
 
@@ -1033,7 +1033,7 @@ Comment=Simple_action
 TriggersCount=1
 
 [Data_5Triggers0]
-Key=Ctrl+Print
+Key=
 Type=SHORTCUT
 Uuid={63aaae30-9cf1-47b0-96f6-a63925cf2da1}
 

@@ -34,7 +34,7 @@ _k_friendly_name=Custom Shortcuts Service
 {f894cb38-5c27-4935-a944-c5f9c4414da4}=none,none,Take Full Screen Screenshot
 
 [kmix]
-_k_friendly_name=Audio Volume
+_k_friendly_name=KMix
 decrease-volume-Capture 2@HD-Audio Generic=none,none,Decrease volume of Capture 2 on HD-Audio Generic
 decrease-volume-Capture@HD-Audio Generic=none,none,Decrease volume of Capture on HD-Audio Generic
 decrease-volume-Center@HD-Audio Generic=none,none,Decrease volume of Center on HD-Audio Generic
@@ -107,7 +107,7 @@ _launch=Alt+Space\tSearch\tAlt+F2,Alt+Space\tAlt+F2\tSearch,KRunner
 
 [ksmserver]
 Halt Without Confirmation=Ctrl+Alt+Shift+PgDown,Ctrl+Alt+Shift+PgDown,Halt Without Confirmation
-Lock Session=Ctrl+Alt+L\tScreensaver\t,Meta+L\tCtrl+Alt+L\tScreensaver,Lock Session
+Lock Session=Meta+Z\tScreensaver,Meta+L\tCtrl+Alt+L\tScreensaver,Lock Session
 Log Out=Ctrl+Alt+Del,Ctrl+Alt+Del,Log Out
 Log Out Without Confirmation=Ctrl+Alt+Shift+Del,Ctrl+Alt+Shift+Del,Log Out Without Confirmation
 Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp,Ctrl+Alt+Shift+PgUp,Reboot Without Confirmation
@@ -268,6 +268,8 @@ _k_friendly_name=Media Controller
 mediavolumedown=none,none,Media volume down
 mediavolumeup=none,none,Media volume up
 nextmedia=Media Next,Media Next,Media playback next
+pausemedia=Media Pause,Media Pause,Pause media playback
+playmedia=none,none,Play media playback
 playpausemedia=Media Play,Media Play,Play/Pause media playback
 previousmedia=Media Previous,Media Previous,Media playback previous
 stopmedia=Media Stop,Media Stop,Stop media playback
